@@ -6,6 +6,7 @@
 
 - [利用許諾](./license.md)
 - [WezTermをインストール](#weztermのインストール)
+- [WezTermの設定を適用](#weztermの設定を適用)
 
 ## WezTermをインストール
 
@@ -17,7 +18,10 @@
 
 - [License](./license.md)
 - [Installing WezTerm](#installing-wezterm)
+- [Applying WezTerm Configuration](#applying-wezterm-configuration)
 
 ## Installing WezTerm
 
 Reference the [official site](https://wezterm.org/installation.html) (external link).
+
+## Applying WezTerm Configuration
