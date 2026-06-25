@@ -8,6 +8,12 @@
 
 ## 基本構造
 
+``` lua
+local wezterm = require("wezterm")
+local configuration = wezterm.config_builder()
+return configuration
+``` 
+
 # Technical Document
 
 ## Table of Contents
@@ -15,3 +21,9 @@
 - [Basic Structure](#basic-structure)
 
 ## Basic Structure
+
+``` lua
+local wezterm = require("wezterm")
+local configuration = wezterm.config_builder()
+return configuration
+``` 
