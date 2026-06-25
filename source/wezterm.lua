@@ -17,4 +17,5 @@ configuration.colors.cursor_fg = brights[1]
 configuration.colors.foreground = ansi[8]
 configuration.colors.selection_bg = brights[2]
 configuration.colors.selection_fg = brights[1]
+configuration.use_ime = true
 return configuration
