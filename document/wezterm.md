@@ -71,11 +71,17 @@ configuration.automatically_reload_config = true
 - [WezTerm｜Colors & Appearance](https://wezterm.org/config/appearance.html)（外部リンク）
 
 ```lua
-local ansi = {"rgb(000% 000% 000%)", "rgb(000% 010% 000%)", "rgb(000% 020% 000%)", "rgb(000% 030% 000%)", "rgb(000% 040% 000%)", "rgb(000% 050% 000%)", "rgb(000% 060% 000%)", "rgb(000% 070% 000%)"}
-local brights = {"rgb(000% 030% 000%)", "rgb(000% 040% 000%)", "rgb(000% 050% 000%)", "rgb(000% 060% 000%)", "rgb(000% 070% 000%)", "rgb(000% 080% 000%)", "rgb(000% 090% 000%)", "rgb(000% 100% 000%)"}
+local ansi_dark = {"#000000", "#002200", "#003300", "#004400", "#005500", "#006600", "#007700", "#008800"}
+local brights_dark = {"#007700", "#009900", "#00AA00", "#00BB00", "#00CC00", "#00DD00", "#00EE00", "#00FF00"}
+local ansi_light = {"#00FF00", "#00DD00", "#00CC00", "#00BB00", "#00AA00", "#009900", "#008800", "#007700"}
+local brights_light = {"#008800", "#006600", "#005500", "#004400", "#003300", "#002200", "#001100", "#000000"}
+local ansi = ansi_dark
+local brights = brights_dark
 configuration.colors = {}
 configuration.colors.ansi = ansi
+configuration.colors.background = ansi[1]
 configuration.colors.brights = brights
+configuration.colors.foreground = ansi[8]
 ```
 
 # Technical Document
@@ -149,9 +155,15 @@ Specify the color pallete.
 - [WezTerm | Colors & Appearance](https://wezterm.org/config/appearance.html) (external link)
 
 ```lua
-local ansi = {"rgb(000% 000% 000%)", "rgb(000% 010% 000%)", "rgb(000% 020% 000%)", "rgb(000% 030% 000%)", "rgb(000% 040% 000%)", "rgb(000% 050% 000%)", "rgb(000% 060% 000%)", "rgb(000% 070% 000%)"}
-local brights = {"rgb(000% 030% 000%)", "rgb(000% 040% 000%)", "rgb(000% 050% 000%)", "rgb(000% 060% 000%)", "rgb(000% 070% 000%)", "rgb(000% 080% 000%)", "rgb(000% 090% 000%)", "rgb(000% 100% 000%)"}
+local ansi_dark = {"#000000", "#002200", "#003300", "#004400", "#005500", "#006600", "#007700", "#008800"}
+local brights_dark = {"#007700", "#009900", "#00AA00", "#00BB00", "#00CC00", "#00DD00", "#00EE00", "#00FF00"}
+local ansi_light = {"#00FF00", "#00DD00", "#00CC00", "#00BB00", "#00AA00", "#009900", "#008800", "#007700"}
+local brights_light = {"#008800", "#006600", "#005500", "#004400", "#003300", "#002200", "#001100", "#000000"}
+local ansi = ansi_dark
+local brights = brights_dark
 configuration.colors = {}
 configuration.colors.ansi = ansi
+configuration.colors.background = ansi[1]
 configuration.colors.brights = brights
+configuration.colors.foreground = ansi[8]
 ```
