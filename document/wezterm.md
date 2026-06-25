@@ -22,6 +22,8 @@ WezTermを管理する主要なモジュール（`wezterm`）を読み込む。
 local wezterm = require("wezterm")
 ```
 
+設定ビルダー（`wezterm.config_builder()`）で設定テーブルを作成する。Luaのテーブルでも設定テーブルを代替できるが、設定ビルダー（`wezterm.config_builder()`）を使用すれば無効な設定に対してエラーを出してくれる。
+
 # Technical Document
 
 ## Table of Contents
@@ -43,3 +45,5 @@ Load the primary module (`wezterm`) for managing WezTerm.
 ``` lua
 local wezterm = require("wezterm")
 ```
+
+Create a configuration table using the configuration builder (`wezterm.config_builder()`). While a Lua's table can alter the configuration table, the one created by the configuration builder (`wezterm.config_builder()`) can generate errors against invalid configuration.
