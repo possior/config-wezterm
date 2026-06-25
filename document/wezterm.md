@@ -42,7 +42,7 @@ return configuration
 
 - [WezTerm｜Lua Reference｜`Config` struct](https://wezterm.org/config/lua/config/)（外部リンク）
 
-```lua
+``` lua
 
 ```
 
