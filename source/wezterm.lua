@@ -6,4 +6,6 @@ configuration.automatically_reload_config = true
 configuration.colors = {}
 configuration.colors.ansi = ansi
 configuration.colors.brights = brights
+configuration.colors.foreground = ansi[6]
+configuration.colors.cursor_bg = ansi[7]
 return configuration

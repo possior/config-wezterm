@@ -59,7 +59,10 @@ configuration.colors.brights = brights
 configuration.automatically_reload_config = true
 ```
 
-色パレットを指定する。
+色パレットを指定する。ANSI 16で定義した16色が、各種の色に係る設定に反映されるようにマッピングした。
+
+- [WezTerm｜Lua Reference｜`Config` struct｜`colors`](https://wezterm.org/config/lua/config/colors.html)（外部リンク）
+- [WezTerm｜Colors & Appearance](https://wezterm.org/config/appearance.html)（外部リンク）
 
 ```lua
 local ansi = {"rgb(000% 000% 000%)", "rgb(000% 010% 000%)", "rgb(000% 020% 000%)", "rgb(000% 030% 000%)", "rgb(000% 040% 000%)", "rgb(000% 050% 000%)", "rgb(000% 060% 000%)", "rgb(000% 070% 000%)"}
@@ -128,7 +131,10 @@ Automatically detect change in configuration and apply it.
 configuration.automatically_reload_config = true
 ```
 
-Specify the color pallete.
+Specify the color pallete. Colors defined by ANSI 16 are mapped to various color-related settings.
+
+- [WezTerm | Lua Reference | `Config` struct | `colors`](https://wezterm.org/config/lua/config/colors.html) (external link)
+- [WezTerm | Colors & Appearance](https://wezterm.org/config/appearance.html) (external link)
 
 ```lua
 local ansi = {"rgb(000% 000% 000%)", "rgb(000% 010% 000%)", "rgb(000% 020% 000%)", "rgb(000% 030% 000%)", "rgb(000% 040% 000%)", "rgb(000% 050% 000%)", "rgb(000% 060% 000%)", "rgb(000% 070% 000%)"}
