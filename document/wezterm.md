@@ -95,6 +95,12 @@ configuration.colors.selection_bg = brights[2]
 configuration.colors.selection_fg = brights[1]
 ```
 
+IMEによる入力を有効化する。これを有効化しなければ日本語を入力できない。
+
+``` lua
+configuration.use_ime = true
+```
+
 # Technical Document
 
 ## Table of Contents
@@ -188,4 +194,10 @@ configuration.colors.cursor_fg = brights[1]
 configuration.colors.foreground = ansi[8]
 configuration.colors.selection_bg = brights[2]
 configuration.colors.selection_fg = brights[1]
+```
+
+Enable inputs by IME. You cannot input Japanese if this disabled.
+
+``` lua
+configuration.use_ime = true
 ```
