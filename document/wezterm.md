@@ -101,6 +101,8 @@ configuration.colors.selection_fg = brights[1]
 
 背景に暈しを入れる。KDE Waylandのプロトコールを使用する。
 
+- [WezTerm｜Lua Reference｜`Config` struct｜`kde_window_background_blur`](https://wezterm.org/config/lua/config/kde_window_background_blur.html)（外部リンク）
+
 ``` lua
 configuration.kde_window_background_blur = true
 ```
@@ -219,6 +221,8 @@ configuration.colors.selection_fg = brights[1]
 ```
 
 Blur the background. This utilizes the KDE Wayland's protocol.
+
+- [WezTerm | Lua Reference | `Config` struct | `kde_window_background_blur`](https://wezterm.org/config/lua/config/kde_window_background_blur.html) (external link)
 
 ``` lua
 configuration.kde_window_background_blur = true
