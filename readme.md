@@ -5,9 +5,9 @@
 ## 目次
 
 - [利用許諾](./license.md)
-- [WezTermのインストール](#weztermのインストール)
+- [WezTermをインストール](#weztermのインストール)
 
-## WezTermのインストール
+## WezTermをインストール
 
 [公式サイト](https://wezterm.org/installation.html)（外部リンク）を参照すること。
 
