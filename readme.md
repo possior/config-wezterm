@@ -4,6 +4,10 @@
 
 ## 目次
 
+- [利用許諾](./license.md)
+
 # WezTerm Configuration
 
 ## Table of Contents
+
+- [License](./license.md)
