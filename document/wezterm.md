@@ -111,6 +111,12 @@ IMEによる入力を有効化する。これを有効化しなければ日本�
 configuration.use_ime = true
 ```
 
+背景に透かしを入れる。
+
+```lua
+configuration.window_background_opacity = 0.8
+```
+
 # Technical Document
 
 I assume a distribution based on Archlinux and environment of KDE Wayland. If you would like to apply to another OS, you need to modify the configuration.
@@ -220,4 +226,10 @@ Enable inputs by IME. You cannot input Japanese if this disabled.
 
 ``` lua
 configuration.use_ime = true
+```
+
+Make the background transparent.
+
+```lua
+configuration.window_background_opacity = 0.8
 ```
