@@ -5,8 +5,11 @@
 ## 目次
 
 - [利用許諾](./license.md)
+- [バージョン情報](./version.md)
 - [WezTermをインストール](#weztermのインストール)
 - [WezTermの設定を適用](#weztermの設定を適用)
+- 技術文書
+  - [`wezterm.lua`](./document/wezterm.md)
 
 ## WezTermをインストール
 
@@ -21,8 +24,11 @@
 ## Table of Contents
 
 - [License](./license.md)
+- [Version Information](./version.md)
 - [Installing WezTerm](#installing-wezterm)
 - [Applying WezTerm Configuration](#applying-wezterm-configuration)
+- Technical Documents
+  - [`wezterm.lua`](./document/wezterm.md)
 
 ## Installing WezTerm
 
