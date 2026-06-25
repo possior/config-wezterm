@@ -4,6 +4,14 @@
 
 ## 目次
 
+- [基本構造](#基本構造)
+
+## 基本構造
+
 # Technical Document
 
 ## Table of Contents
+
+- [Basic Structure](#basic-structure)
+
+## Basic Structure
