@@ -30,6 +30,12 @@ local wezterm = require("wezterm")
 local configuration = wezterm.config_builder()
 ```
 
+設定テーブルを返還する。
+
+``` lua
+return configuration
+```
+
 # Technical Document
 
 ## Table of Contents
@@ -58,4 +64,10 @@ Create a configuration table using the configuration builder (`wezterm.config_bu
 
 ``` lua
 local configuration = wezterm.config_builder()
+```
+
+Return the configuration table.
+
+``` lua
+return configuration
 ```
