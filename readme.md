@@ -14,6 +14,8 @@
 
 ## WezTermの設定を適用
 
+現在開発中。
+
 # WezTerm Configuration
 
 ## Table of Contents
@@ -27,3 +29,5 @@
 Reference the [official site](https://wezterm.org/installation.html) (external link).
 
 ## Applying WezTerm Configuration
+
+Now developing.
