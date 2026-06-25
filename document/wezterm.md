@@ -117,6 +117,8 @@ configuration.use_ime = true
 
 背景に透かしを入れる。
 
+- [WezTerm｜Colors & Appearance｜Window Background Opacity](https://wezterm.org/config/appearance.html#window-background-opacity)（外部リンク）
+
 ```lua
 configuration.window_background_opacity = 0.8
 ```
@@ -237,6 +239,8 @@ configuration.use_ime = true
 ```
 
 Make the background transparent.
+
+- [WezTerm｜Colors & Appearance｜Window Background Opacity](https://wezterm.org/config/appearance.html#window-background-opacity) (external link)
 
 ```lua
 configuration.window_background_opacity = 0.8
