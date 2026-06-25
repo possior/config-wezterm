@@ -107,6 +107,8 @@ configuration.kde_window_background_blur = true
 
 IMEによる入力を有効化する。これを有効化しなければ日本語を入力できない。
 
+- [WezTerm｜Lua Reference｜`Config` struct｜`use_ime`](https://wezterm.org/config/lua/config/use_ime.html)（外部リンク）
+
 ``` lua
 configuration.use_ime = true
 ```
@@ -223,6 +225,8 @@ configuration.kde_window_background_blur = true
 ```
 
 Enable inputs by IME. You cannot input Japanese if this disabled.
+
+- [WezTerm | Lua Reference | `Config` struct | `use_ime`](https://wezterm.org/config/lua/config/use_ime.html) (external link)
 
 ``` lua
 configuration.use_ime = true
