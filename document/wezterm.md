@@ -60,7 +60,9 @@ configuration.colors.cursor_fg = brights[1]
 configuration.colors.foreground = ansi[8]
 configuration.colors.selection_bg = brights[2]
 configuration.colors.selection_fg = brights[1]
+configuration.kde_window_background_blur = true
 configuration.use_ime = true
+configuration.window_background_opacity = 0.8
 ```
 
 自動で設定の変更を検出してその設定を適用する。
@@ -161,7 +163,9 @@ configuration.colors.cursor_fg = brights[1]
 configuration.colors.foreground = ansi[8]
 configuration.colors.selection_bg = brights[2]
 configuration.colors.selection_fg = brights[1]
+configuration.kde_window_background_blur = true
 configuration.use_ime = true
+configuration.window_background_opacity = 0.8
 ```
 
 Automatically detect change in configuration and apply it.
