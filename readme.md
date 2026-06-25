@@ -9,6 +9,8 @@
 
 ## WezTermのインストール
 
+[公式サイト](https://wezterm.org/installation.html)（外部リンク）を参照すること。
+
 # WezTerm Configuration
 
 ## Table of Contents
@@ -17,3 +19,5 @@
 - [Installing WezTerm](#installing-wezterm)
 
 ## Installing WezTerm
+
+Reference the [official site](https://wezterm.org/installation.html) (external link).
