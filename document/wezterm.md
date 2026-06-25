@@ -2,6 +2,8 @@
 
 # 技術文書
 
+Archlinux系統のディストリビューションとKDE Wayland環境を想定している。その他のOSに適用する場合には設定を編集する必要がある。
+
 ## 目次
 
 - [基本構造](#基本構造)
@@ -104,6 +106,8 @@ configuration.use_ime = true
 ```
 
 # Technical Document
+
+I assume a distribution based on Archlinux and environment of KDE Wayland. If you would like to apply to another OS, you need to modify the configuration.
 
 ## Table of Contents
 
