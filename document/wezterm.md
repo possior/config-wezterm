@@ -53,6 +53,8 @@ configuration.colors.brights = brights
 
 自動で設定の変更を検出してその設定を適用する。
 
+- [WezTerm｜Lua Reference｜`Config` struct｜`automatically_reload_config`](https://wezterm.org/config/lua/config/automatically_reload_config.html)（外部リンク）
+
 ``` lua
 configuration.automatically_reload_config = true
 ```
@@ -109,6 +111,8 @@ configuration.colors.brights = brights
 ```
 
 Automatically detect change in configuration and apply it.
+
+- [WezTerm｜Lua Reference｜`Config` struct | `automatically_reload_config`](https://wezterm.org/config/lua/config/automatically_reload_config.html) (external link)
 
 ``` lua
 configuration.automatically_reload_config = true
