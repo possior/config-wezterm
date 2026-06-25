@@ -2,4 +2,8 @@
 
 # WezTermの設定
 
+## 目次
+
 # WezTerm Configuration
+
+## Table of Contents
