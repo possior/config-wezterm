@@ -5,6 +5,7 @@
 ## 目次
 
 - [基本構造](#基本構造)
+- [一般的な設定](#一般的な設定)
 
 ## 基本構造
 
@@ -37,11 +38,14 @@ local configuration = wezterm.config_builder()
 return configuration
 ```
 
+## 一般的な設定
+
 # Technical Document
 
 ## Table of Contents
 
 - [Basic Structure](#basic-structure)
+- [General Configuration](#general-configuration)
 
 ## Basic Structure
 
@@ -73,3 +77,5 @@ Return the configuration table.
 ``` lua
 return configuration
 ```
+
+## General Configuration
