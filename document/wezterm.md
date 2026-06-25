@@ -99,6 +99,12 @@ configuration.colors.selection_bg = brights[2]
 configuration.colors.selection_fg = brights[1]
 ```
 
+背景に暈しを入れる。KDE Waylandのプロトコールを使用する。
+
+``` lua
+configuration.kde_window_background_blur = true
+```
+
 IMEによる入力を有効化する。これを有効化しなければ日本語を入力できない。
 
 ``` lua
@@ -202,6 +208,12 @@ configuration.colors.cursor_fg = brights[1]
 configuration.colors.foreground = ansi[8]
 configuration.colors.selection_bg = brights[2]
 configuration.colors.selection_fg = brights[1]
+```
+
+Blur the background. This utilizes the KDE Wayland's protocol.
+
+``` lua
+configuration.kde_window_background_blur = true
 ```
 
 Enable inputs by IME. You cannot input Japanese if this disabled.
