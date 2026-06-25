@@ -40,6 +40,12 @@ return configuration
 
 ## 一般的な設定
 
+- [WezTerm｜Lua Reference｜`Config` struct](https://wezterm.org/config/lua/config/)（外部リンク）
+
+```lua
+
+```
+
 # Technical Document
 
 ## Table of Contents
@@ -79,3 +85,9 @@ return configuration
 ```
 
 ## General Configuration
+
+- [WezTerm｜Lua Reference｜`Config` struct](https://wezterm.org/config/lua/config/) (external link)
+
+``` lua
+
+```
