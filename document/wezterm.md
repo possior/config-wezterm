@@ -46,6 +46,12 @@ return configuration
 configuration.automatically_reload_config = true
 ```
 
+自動で設定の変更を検出してその設定を適用する。
+
+``` lua
+configuration.automatically_reload_config = true
+```
+
 # Technical Document
 
 ## Table of Contents
@@ -87,6 +93,12 @@ return configuration
 ## General Configuration
 
 - [WezTerm｜Lua Reference｜`Config` struct](https://wezterm.org/config/lua/config/) (external link)
+
+``` lua
+configuration.automatically_reload_config = true
+```
+
+Automatically detect change in configuration and apply it.
 
 ``` lua
 configuration.automatically_reload_config = true
