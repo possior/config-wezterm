@@ -12,7 +12,9 @@
 local wezterm = require("wezterm")
 local configuration = wezterm.config_builder()
 return configuration
-``` 
+```
+
+WezTermを管理する主要なモジュール（`wezterm`）を読み込む。
 
 # Technical Document
 
@@ -26,4 +28,6 @@ return configuration
 local wezterm = require("wezterm")
 local configuration = wezterm.config_builder()
 return configuration
-``` 
+```
+
+Load the primary module (`wezterm`) for managing WezTerm.
