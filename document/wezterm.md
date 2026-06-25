@@ -54,7 +54,12 @@ configuration.colors = {}
 configuration.colors.ansi = ansi
 configuration.colors.background = ansi[1]
 configuration.colors.brights = brights
+configuration.colors.cursor_bg = brights[2]
+configuration.colors.cursor_border = brights[2]
+configuration.colors.cursor_fg = brights[1]
 configuration.colors.foreground = ansi[8]
+configuration.colors.selection_bg = brights[2]
+configuration.colors.selection_fg = brights[1]
 ```
 
 自動で設定の変更を検出してその設定を適用する。
@@ -81,7 +86,12 @@ configuration.colors = {}
 configuration.colors.ansi = ansi
 configuration.colors.background = ansi[1]
 configuration.colors.brights = brights
+configuration.colors.cursor_bg = brights[2]
+configuration.colors.cursor_border = brights[2]
+configuration.colors.cursor_fg = brights[1]
 configuration.colors.foreground = ansi[8]
+configuration.colors.selection_bg = brights[2]
+configuration.colors.selection_fg = brights[1]
 ```
 
 # Technical Document
@@ -138,7 +148,12 @@ configuration.colors = {}
 configuration.colors.ansi = ansi
 configuration.colors.background = ansi[1]
 configuration.colors.brights = brights
+configuration.colors.cursor_bg = brights[2]
+configuration.colors.cursor_border = brights[2]
+configuration.colors.cursor_fg = brights[1]
 configuration.colors.foreground = ansi[8]
+configuration.colors.selection_bg = brights[2]
+configuration.colors.selection_fg = brights[1]
 ```
 
 Automatically detect change in configuration and apply it.
@@ -165,5 +180,10 @@ configuration.colors = {}
 configuration.colors.ansi = ansi
 configuration.colors.background = ansi[1]
 configuration.colors.brights = brights
+configuration.colors.cursor_bg = brights[2]
+configuration.colors.cursor_border = brights[2]
+configuration.colors.cursor_fg = brights[1]
 configuration.colors.foreground = ansi[8]
+configuration.colors.selection_bg = brights[2]
+configuration.colors.selection_fg = brights[1]
 ```
