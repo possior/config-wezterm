@@ -59,6 +59,16 @@ configuration.colors.brights = brights
 configuration.automatically_reload_config = true
 ```
 
+色パレットを指定する。
+
+```lua
+local ansi = {"rgb(000% 000% 000%)", "rgb(000% 010% 000%)", "rgb(000% 020% 000%)", "rgb(000% 030% 000%)", "rgb(000% 040% 000%)", "rgb(000% 050% 000%)", "rgb(000% 060% 000%)", "rgb(000% 070% 000%)"}
+local brights = {"rgb(000% 030% 000%)", "rgb(000% 040% 000%)", "rgb(000% 050% 000%)", "rgb(000% 060% 000%)", "rgb(000% 070% 000%)", "rgb(000% 080% 000%)", "rgb(000% 090% 000%)", "rgb(000% 100% 000%)"}
+configuration.colors = {}
+configuration.colors.ansi = ansi
+configuration.colors.brights = brights
+```
+
 # Technical Document
 
 ## Table of Contents
@@ -116,4 +126,14 @@ Automatically detect change in configuration and apply it.
 
 ``` lua
 configuration.automatically_reload_config = true
+```
+
+Specify the color pallete.
+
+```lua
+local ansi = {"rgb(000% 000% 000%)", "rgb(000% 010% 000%)", "rgb(000% 020% 000%)", "rgb(000% 030% 000%)", "rgb(000% 040% 000%)", "rgb(000% 050% 000%)", "rgb(000% 060% 000%)", "rgb(000% 070% 000%)"}
+local brights = {"rgb(000% 030% 000%)", "rgb(000% 040% 000%)", "rgb(000% 050% 000%)", "rgb(000% 060% 000%)", "rgb(000% 070% 000%)", "rgb(000% 080% 000%)", "rgb(000% 090% 000%)", "rgb(000% 100% 000%)"}
+configuration.colors = {}
+configuration.colors.ansi = ansi
+configuration.colors.brights = brights
 ```
