@@ -11,6 +11,7 @@
 ``` lua
 local wezterm = require("wezterm")
 local configuration = wezterm.config_builder()
+-- 設定 --
 return configuration
 ```
 
@@ -47,6 +48,7 @@ return configuration
 ``` lua
 local wezterm = require("wezterm")
 local configuration = wezterm.config_builder()
+-- configuration --
 return configuration
 ```
 
