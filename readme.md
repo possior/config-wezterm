@@ -12,6 +12,8 @@
 
 [公式サイト](https://wezterm.org/installation.html)（外部リンク）を参照すること。
 
+## WezTermの設定を適用
+
 # WezTerm Configuration
 
 ## Table of Contents
