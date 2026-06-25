@@ -59,7 +59,7 @@ configuration.colors.brights = brights
 configuration.automatically_reload_config = true
 ```
 
-色パレットを指定する。ANSI 16で定義した16色が、各種の色に係る設定に反映されるようにマッピングした。
+色パレットを指定する。ANSI 16で定義した16色が、各種の色に係る設定に反映されるようにマッピングした。標準色の8色と強調色の8色に分かれ、それぞれ順に、背景色、警告メッセージ、成功メッセージ、
 
 - [WezTerm｜Lua Reference｜`Config` struct｜`colors`](https://wezterm.org/config/lua/config/colors.html)（外部リンク）
 - [WezTerm｜Colors & Appearance](https://wezterm.org/config/appearance.html)（外部リンク）
