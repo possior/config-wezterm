@@ -8,6 +8,7 @@ Archlinux系統のディストリビューションとKDE Wayland環境を想定
 
 - [基本構造](#基本構造)
 - [一般的な設定](#一般的な設定)
+- [キーの設定](#キーの設定)
 
 ## 基本構造
 
@@ -134,6 +135,8 @@ configuration.use_ime = true
 configuration.window_background_opacity = 0.8
 ```
 
+## キーの設定
+
 # Technical Document
 
 I assume a distribution based on Archlinux and environment of KDE Wayland. If you would like to apply to another OS, you need to modify the configuration.
@@ -142,6 +145,7 @@ I assume a distribution based on Archlinux and environment of KDE Wayland. If yo
 
 - [Basic Structure](#basic-structure)
 - [General Configuration](#general-configuration)
+- [Key Configuration](#key-configuration)
 
 ## Basic Structure
 
@@ -267,3 +271,5 @@ Make the background transparent.
 ```lua
 configuration.window_background_opacity = 0.8
 ```
+
+## Key Configuration
