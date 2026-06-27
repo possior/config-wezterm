@@ -137,7 +137,16 @@ configuration.window_background_opacity = 0.8
 
 ## キーの設定
 
+設定の適用前に予めキーの設定をバックアップしたい場合は、以下の命令文を実行することで有効なLua形式でその設定を出力できる。
+
+- [WezTerm｜Default Key Assignments](https://wezterm.org/config/default-keys.html)（外部リンク）
+
+``` lua
+wezterm show-keys --lua > wezterm.lua.bak
+```
+
 - [WezTerm｜Configuring Key Assignments](https://wezterm.org/config/keys.html)（外部リンク）
+- [WezTerm｜Key Tables](https://wezterm.org/config/key-tables.html)（外部リンク）
 
 ``` lua
 -- プログラミング中 --
@@ -246,8 +255,8 @@ configuration.colors.selection_fg = brights[1]
 
 Specify fonts: Liberation Mono, IPAexGothic, and Symbols Nerd Font Mono in this order.
 
-- [WezTerm｜Lua Reference｜`Config` struct｜`font`](https://wezterm.org/config/lua/config/font.html) (external link)
-- [WezTerm｜Lua Reference｜`wezterm` module｜`wezterm.font_with_fallback()`
+- [WezTerm | Lua Reference | `Config` struct | `font`](https://wezterm.org/config/lua/config/font.html) (external link)
+- [WezTerm | Lua Reference | `wezterm` module | `wezterm.font_with_fallback()`
 `](https://wezterm.org/config/lua/wezterm/font_with_fallback.html) (external link)
 
 ``` lua
@@ -272,7 +281,7 @@ configuration.use_ime = true
 
 Make the background transparent.
 
-- [WezTerm｜Colors & Appearance｜Window Background Opacity](https://wezterm.org/config/appearance.html#window-background-opacity) (external link)
+- [WezTerm | Colors & Appearance | Window Background Opacity](https://wezterm.org/config/appearance.html#window-background-opacity) (external link)
 
 ```lua
 configuration.window_background_opacity = 0.8
@@ -280,7 +289,16 @@ configuration.window_background_opacity = 0.8
 
 ## Key Configuration
 
-- [WezTerm｜Configuring Key Assignments](https://wezterm.org/config/keys.html) (external link)
+If you would like to back up key configuration in advance of applying configuration, execute the following command to output it in a valid Lua format.
+
+- [WezTerm｜Default Key Assignments](https://wezterm.org/config/default-keys.html) (external link)
+
+``` lua
+wezterm show-keys --lua > wezterm.lua.bak
+```
+
+- [WezTerm | Configuring Key Assignments](https://wezterm.org/config/keys.html) (external link)
+- [WezTerm | Key Tables](https://wezterm.org/config/key-tables.html) (external link)
 
 ``` lua
 -- now programming --
