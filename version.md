@@ -6,6 +6,7 @@
 |:---:|:--- |
 | `01.01` | [リポジトリ](https://github.com/possior/config-omegat/tree/ver.01.01/) |
 | `01.01.01` | [リポジトリ](https://github.com/possior/config-omegat/tree/ver.01.01.01/)、[リリース](https://github.com/possior/config-omegat/releases/tag/ver.01.01.01/) |
+| `01.01.02` | [リポジトリ](https://github.com/possior/config-omegat/tree/ver.01.01.02/)、[リリース](https://github.com/possior/config-omegat/releases/tag/ver.01.01.02/) |
 
 # Version Information
 
@@ -13,4 +14,4 @@
 |:---:|:--- |
 | `01.01` | [repository](https://github.com/possior/config-omegat/tree/ver.01.01/) |
 | `01.01.01` | [repository](https://github.com/possior/config-omegat/tree/ver.01.01.01/)、[release](https://github.com/possior/config-omegat/releases/tag/ver.01.01.01/) |
-|
+| `01.01.02` | [repository](https://github.com/possior/config-omegat/tree/ver.01.01.02/)、[release](https://github.com/possior/config-omegat/releases/tag/ver.01.01.02/) |
