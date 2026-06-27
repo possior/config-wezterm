@@ -8,7 +8,7 @@ fi
 while
   [[ -f ${HOME}/.config/wezterm/wezterm.lua ]]
 do
-  read -rp ":: overwriting wezterm.lua? [Y/n] " decision
+  read -rp ":: overwriting wezterm.lua? [Y/n] " decision < /dev/tty
   if
     [[ -z "${decision}" ]]
   then
@@ -25,7 +25,7 @@ done
 
 case "${decision}" in
   "Y" | "y")
-    curl -o ${HOME}/.config/wezterm/wezterm.lua https://raw.githubusercontent.com/possior/config-wezterm/default/src/wezterm.lua
+    curl -so ${HOME}/.config/wezterm/wezterm.lua https://raw.githubusercontent.com/possior/config-wezterm/default/src/wezterm.lua
     echo ".. downloaded config file"
     ;;
   *)
