@@ -62,6 +62,7 @@ configuration.colors.cursor_fg = brights[1]
 configuration.colors.foreground = ansi[8]
 configuration.colors.selection_bg = brights[2]
 configuration.colors.selection_fg = brights[1]
+configuration.font = wezterm.font_with_fallback("Liberation Mono", "IPAexGothic", "Symbols Nerd Font Mono")
 configuration.kde_window_background_blur = true
 configuration.use_ime = true
 configuration.window_background_opacity = 0.8
@@ -97,6 +98,16 @@ configuration.colors.cursor_fg = brights[1]
 configuration.colors.foreground = ansi[8]
 configuration.colors.selection_bg = brights[2]
 configuration.colors.selection_fg = brights[1]
+```
+
+フォントを指定する。Liberation Mono、IPAexゴシック、Symbols Nerd Font Monoの順にフォントを使用する。
+
+- [WezTerm｜Lua Reference｜`Config` struct｜`font`](https://wezterm.org/config/lua/config/font.html)（外部リンク）
+- [WezTerm｜Lua Reference｜`wezterm` module｜`wezterm.font_with_fallback()`
+`](https://wezterm.org/config/lua/wezterm/font_with_fallback.html)（外部リンク）
+
+``` lua
+configuration.font = wezterm.font_with_fallback("Liberation Mono", "IPAexGothic", "Symbols Nerd Font Mono")
 ```
 
 背景に暈しを入れる。KDE Waylandのプロトコールを使用する。
@@ -185,6 +196,7 @@ configuration.colors.cursor_fg = brights[1]
 configuration.colors.foreground = ansi[8]
 configuration.colors.selection_bg = brights[2]
 configuration.colors.selection_fg = brights[1]
+configuration.font = wezterm.font_with_fallback("Liberation Mono", "IPAexGothic", "Symbols Nerd Font Mono")
 configuration.kde_window_background_blur = true
 configuration.use_ime = true
 configuration.window_background_opacity = 0.8
@@ -220,6 +232,16 @@ configuration.colors.cursor_fg = brights[1]
 configuration.colors.foreground = ansi[8]
 configuration.colors.selection_bg = brights[2]
 configuration.colors.selection_fg = brights[1]
+```
+
+Specify fonts: Liberation Mono, IPAexGothic, and Symbols Nerd Font Mono in this order.
+
+- [WezTerm｜Lua Reference｜`Config` struct｜`font`](https://wezterm.org/config/lua/config/font.html) (external link)
+- [WezTerm｜Lua Reference｜`wezterm` module｜`wezterm.font_with_fallback()`
+`](https://wezterm.org/config/lua/wezterm/font_with_fallback.html) (external link)
+
+``` lua
+configuration.font = wezterm.font_with_fallback("Liberation Mono", "IPAexGothic", "Symbols Nerd Font Mono")
 ```
 
 Blur the background. This utilizes the KDE Wayland's protocol.
