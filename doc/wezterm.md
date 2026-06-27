@@ -152,6 +152,14 @@ wezterm show-keys --lua > wezterm.lua.bak
 configuration.disable_default_key_bindings = false
 ```
 
+デフォルトのキーを採用する。キーを全て決定し終えたら無効化する。
+
+- [WezTerm｜Default Key Assignments](https://wezterm.org/config/default-keys.html)（外部リンク）
+
+```lua
+configuration.disable_default_key_bindings = false
+```
+
 # Technical Document
 
 I assume a distribution based on Archlinux and environment of KDE Wayland. If you would like to apply to another OS, you need to modify the configuration.
@@ -301,5 +309,13 @@ wezterm show-keys --lua > wezterm.lua.bak
 - [WezTerm | Key Tables](https://wezterm.org/config/key-tables.html) (external link)
 
 ``` lua
+configuration.disable_default_key_bindings = false
+```
+
+Adopt default keys. Disable this once setting all the keys.
+
+- [WezTerm | Default Key Assignments](https://wezterm.org/config/default-keys.html) (external link)
+
+```lua
 configuration.disable_default_key_bindings = false
 ```
