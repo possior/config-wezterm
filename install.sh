@@ -17,12 +17,26 @@ while
 do
   case "$1" in
     "-o" | "--overwrite")
-      behavior="overwrite"
-      shift 1
+      if
+	[[ -z "${behavior}" ]]
+      then
+	behavior="overwrite"
+	shift 1
+      else
+	echo "!! detected conflicting behavior flags"
+	exit
+      fi
       ;;
     "-p" | "--preserve")
-      behavior="preserve"
-      shift 1
+      if
+	[[ -z "${behavior}" ]]
+      then
+	behavior="preserve"
+        shift 1
+      else
+	echo "!! detected conflicting behavior flags"
+	exit
+      fi
       ;;
   esac
 done
