@@ -149,7 +149,7 @@ wezterm show-keys --lua > wezterm.lua.bak
 - [WezTerm｜Key Tables](https://wezterm.org/config/key-tables.html)（外部リンク）
 
 ``` lua
--- プログラミング中 --
+configuration.disable_default_key_bindings = false
 ```
 
 # Technical Document
@@ -301,5 +301,5 @@ wezterm show-keys --lua > wezterm.lua.bak
 - [WezTerm | Key Tables](https://wezterm.org/config/key-tables.html) (external link)
 
 ``` lua
--- now programming --
+configuration.disable_default_key_bindings = false
 ```
