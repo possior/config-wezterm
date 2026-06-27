@@ -2,32 +2,27 @@ if
   [[ ! -d ${HOME}/.config/wezterm ]]
 then
   mkdir -p ${HOME}/.config/wezterm
-  echo ".. created config directory"
+  echo ".. created configuration directory"
 fi
 
-while
+if
   [[ -f ${HOME}/.config/wezterm/wezterm.lua ]]
-do
-  read -rp ":: overwriting wezterm.lua? [Y/n] " decision < /dev/tty
-  if
-    [[ -z "${decision}" ]]
-  then
-    decision="Y"
-    break
-  elif
-    [[ "${decision}" =~ ^[NYny]$ ]]
-  then
-    break
-  else
-    echo "!! detected invalid input -- try again"
-  fi
-done
+then
+  echo "?? detected wezterm.lua at the configuration directory"
+  read -rp ":: overwriting wezterm.lua? [Y/n]" decision
+fi
 
-case "${decision}" in
-  "Y" | "y")
-    curl -so ${HOME}/.config/wezterm/wezterm.lua https://raw.githubusercontent.com/possior/config-wezterm/default/src/wezterm.lua
-    echo ".. downloaded config file"
-    ;;
-  *)
-    ;;
-esac
+if
+  [[ "${decision}" =~ [Yy] || -z "${decision}" ]]
+then
+  echo ".. accepted your input"
+  curl -so ${HOME}/.config/wezterm/wezterm.lua https://raw.githubusercontent.com/possior/config-wezterm/default/src/wezterm.lua
+  echo ".. downloaded wezterm.lua"
+elif
+  [[ "${decision}" =~ [Nn] ]]
+then
+  echo ".. accepted your input"
+else
+  echo "!! detected an invalid input -- terminated the process"
+  exit
+fi
