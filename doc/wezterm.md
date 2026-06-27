@@ -137,6 +137,8 @@ configuration.window_background_opacity = 0.8
 
 ## キーの設定
 
+- [WezTerm｜Configuring Key Assignments](https://wezterm.org/config/keys.html)（外部リンク）
+
 # Technical Document
 
 I assume a distribution based on Archlinux and environment of KDE Wayland. If you would like to apply to another OS, you need to modify the configuration.
@@ -273,3 +275,5 @@ configuration.window_background_opacity = 0.8
 ```
 
 ## Key Configuration
+
+- [WezTerm｜Configuring Key Assignments](https://wezterm.org/config/keys.html) (external link)
