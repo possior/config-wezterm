@@ -1,28 +1,53 @@
+function overwriter() {
+  curl -so ${HOME}/.config/wezterm/${1##*/} ${1}
+}
+
+function preserver() {
+  if
+    [[ ! -f ${HOME}/.config/wezterm/${1##*/} ]]
+  then
+    curl -so ${HOME}/.config/wezterm/${1##*/} ${1}
+  fi
+}
+
+echo ".. initiated the process"
+
+while
+  [[ $# -gt 0 ]]
+do
+  case "$1" in
+    "-o" | "--overwrite")
+      behavior="overwrite"
+      shift 1
+      ;;
+    "-p" | "--preserve")
+      behavior="preserve"
+      shift 1
+      ;;
+  esac
+done
+
+echo ".. parsed arguments"
+
 if
   [[ ! -d ${HOME}/.config/wezterm ]]
 then
   mkdir -p ${HOME}/.config/wezterm
-  echo ".. created configuration directory"
+
+  echo ".. created the configuration directory"
 fi
 
-if
-  [[ -f ${HOME}/.config/wezterm/wezterm.lua ]]
-then
-  echo "?? detected wezterm.lua at the configuration directory"
-  read -rp ":: overwriting wezterm.lua? [Y/n]" decision
-fi
-
-if
-  [[ "${decision}" =~ [Yy] || -z "${decision}" ]]
-then
-  echo ".. accepted your input"
-  curl -so ${HOME}/.config/wezterm/wezterm.lua https://raw.githubusercontent.com/possior/config-wezterm/default/src/wezterm.lua
-  echo ".. downloaded wezterm.lua"
-elif
-  [[ "${decision}" =~ [Nn] ]]
-then
-  echo ".. accepted your input"
-else
-  echo "!! detected an invalid input -- terminated the process"
-  exit
-fi
+case "${behavior:-overwrite}" in
+  "overwrite")
+    overwriter https://raw.githubusercontent.com/possior/config-wezterm/default/src/wezterm.lua
+    echo ".. downloaded configuration files (overwrite)"
+    ;;
+  "preserve")
+    preserver https://raw.githubusercontent.com/possior/config-wezterm/default/src/wezterm.lua
+    echo ".. downloaded configuration files (preserve)"
+    ;;
+  *)
+    echo "!! failed downloadation due to unknown internal variable value"
+    exit
+    ;;
+esac
