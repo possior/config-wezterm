@@ -9,7 +9,7 @@
 - [WezTermをインストール](#weztermのインストール)
 - [WezTermの設定を適用](#weztermの設定を適用)
 - 技術文書
-  - [`wezterm.lua`](./document/wezterm.md)
+  - [`wezterm.lua`](./doc/wezterm.md)
 
 ## WezTermをインストール
 
@@ -35,7 +35,7 @@ bash <(curl -s https://raw.githubusercontent.com/possior/config-wezterm/default/
 - [Installing WezTerm](#installing-wezterm)
 - [Applying WezTerm Configuration](#applying-wezterm-configuration)
 - Technical Documents
-  - [`wezterm.lua`](./document/wezterm.md)
+  - [`wezterm.lua`](./doc/wezterm.md)
 
 ## Installing WezTerm
 
