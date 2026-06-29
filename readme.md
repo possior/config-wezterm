@@ -4,7 +4,7 @@
 
 ## 目次
 
-- [利用許諾](./license.md)
+- [利用許諾（CC0、0BSD）](./license.md)
 - [バージョン情報](./version.md)
 - [WezTermをインストール](#weztermのインストール)
 - [WezTermの設定を適用](#weztermの設定を適用)
@@ -30,7 +30,7 @@ bash <(curl -s https://raw.githubusercontent.com/possior/config-wezterm/default/
 
 ## Table of Contents
 
-- [License](./license.md)
+- [License (CC0, 0BSD)](./license.md)
 - [Version Information](./version.md)
 - [Installing WezTerm](#installing-wezterm)
 - [Applying WezTerm Configuration](#applying-wezterm-configuration)
