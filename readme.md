@@ -13,7 +13,7 @@
 
 ## WezTermをインストール
 
-[公式サイト](https://wezterm.org/installation.html)（外部リンク）を参照すること。
+[WezTerm公式サイト](https://wezterm.org/installation.html)（外部リンク）を参照すること。
 
 ## WezTermの設定を適用
 
@@ -39,7 +39,7 @@ bash <(curl -s https://raw.githubusercontent.com/possior/config-wezterm/default/
 
 ## Installing WezTerm
 
-Reference the [official site](https://wezterm.org/installation.html) (external link).
+Reference the [WezTerm official site](https://wezterm.org/installation.html) (external link).
 
 ## Applying WezTerm Configuration
 
