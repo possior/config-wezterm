@@ -1,4 +1,4 @@
-[日本語](#技術文書)｜[English](#technical-document)｜[`wezterm.lua`](../source/wezterm.lua)
+[日本語](#技術文書)｜[English](#technical-document)｜[`wezterm.lua`](../src/wezterm.lua)
 
 # 技術文書
 
