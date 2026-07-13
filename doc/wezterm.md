@@ -190,6 +190,8 @@ configuration.disable_default_key_bindings = false
 
 キーとその挙動を設定する。
 
+- [WezTerm｜Configuring Key Assignments](https://wezterm.org/config/keys.html)（外部リンク）
+
 ```lua
 configuration.keys = {
     {key = "Tab", mods = "CTRL", action = action.ActivateTabRelative(1)},
@@ -410,6 +412,8 @@ configuration.disable_default_key_bindings = false
 ```
 
 Configure keys and their behavior.
+
+- [WezTerm | Configuring Key Assignments](https://wezterm.org/config/keys.html) (external link)
 
 ```lua
 configuration.keys = {
