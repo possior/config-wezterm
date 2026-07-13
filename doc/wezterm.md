@@ -160,6 +160,8 @@ configuration.disable_default_key_bindings = false
 configuration.disable_default_key_bindings = false
 ```
 
+キーとその挙動を設定する。
+
 # Technical Document
 
 I assume a distribution based on Archlinux and environment of KDE Wayland. If you would like to apply to another OS, you need to modify the configuration.
@@ -319,3 +321,5 @@ Adopt default keys. Disable this once setting all the keys.
 ```lua
 configuration.disable_default_key_bindings = false
 ```
+
+Configure keys and their behavior.
