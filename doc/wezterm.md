@@ -190,6 +190,37 @@ configuration.disable_default_key_bindings = false
 
 キーとその挙動を設定する。
 
+```lua
+configuration.keys = {
+    {key = "Tab", mods = "CTRL", action = action.ActivateTabRelative(1)},
+    {key = "_", mods = "CTRL", action = action.DecreaseFontSize},
+    {key = "-", mods = "CTRL", action = action.DecreaseFontSize},
+    {key = "+", mods = "CTRL", action = action.IncreaseFontSize},
+    {key = "=", mods = "CTRL", action = action.IncreaseFontSize},
+    {key = "C", mods = "CTRL", action = action.SendKey({key = "C", mods = "CTRL"})},
+    {key = "c", mods = "CTRL", action = action.SendKey({key = "c", mods = "CTRL"})},
+    {key = "N", mods = "CTRL", action = action.SpawnTab("CurrentPaneDomain")},
+    {key = "n", mods = "CTRL", action = action.SpawnTab("CurrentPaneDomain")},
+    {key = "W", mods = "CTRL", action = action.CloseCurrentTab({confirm = true})},
+    {key = "w", mods = "CTRL", action = action.CloseCurrentTab({confirm = true})},
+    {key = "V", mods = "CTRL", action = action.SendKey({key = "V", mods = "CTRL"})},
+    {key = "v", mods = "CTRL", action = action.SendKey({key = "v", mods = "CTRL"})},
+    {key = "Tab", mods = "SHIFT|CTRL", action = action.ActivateTabRelative(-1)},
+    {key = "_", mods = "SHIFT|CTRL", action = action.DecreaseFontSize},
+    {key = "-", mods = "SHIFT|CTRL", action = action.DecreaseFontSize},
+    {key = "+", mods = "SHIFT|CTRL", action = action.IncreaseFontSize},
+    {key = "=", mods = "SHIFT|CTRL", action = action.IncreaseFontSize},
+    {key = "C", mods = "SHIFT|CTRL", action = action.CopyTo("Clipboard")},
+    {key = "c", mods = "SHIFT|CTRL", action = action.CopyTo("Clipboard")},
+    {key = "N", mods = "SHIFT|CTRL", action = action.SpawnWindow},
+    {key = "n", mods = "SHIFT|CTRL", action = action.SpawnWindow},
+    {key = "W", mods = "SHIFT|CTRL", action = action.CloseCurrentTab({confirm = true})},
+    {key = "w", mods = "SHIFT|CTRL", action = action.CloseCurrentTab({confirm = true})},
+    {key = "V", mods = "SHIFT|CTRL", action = action.PasteFrom("Clipboard")},
+    {key = "v", mods = "SHIFT|CTRL", action = action.PasteFrom("Clipboard")}
+}
+```
+
 # Technical Document
 
 I assume a distribution based on Archlinux and environment of KDE Wayland. If you would like to apply to another OS, you need to modify the configuration.
@@ -379,3 +410,34 @@ configuration.disable_default_key_bindings = false
 ```
 
 Configure keys and their behavior.
+
+```lua
+configuration.keys = {
+    {key = "Tab", mods = "CTRL", action = action.ActivateTabRelative(1)},
+    {key = "_", mods = "CTRL", action = action.DecreaseFontSize},
+    {key = "-", mods = "CTRL", action = action.DecreaseFontSize},
+    {key = "+", mods = "CTRL", action = action.IncreaseFontSize},
+    {key = "=", mods = "CTRL", action = action.IncreaseFontSize},
+    {key = "C", mods = "CTRL", action = action.SendKey({key = "C", mods = "CTRL"})},
+    {key = "c", mods = "CTRL", action = action.SendKey({key = "c", mods = "CTRL"})},
+    {key = "N", mods = "CTRL", action = action.SpawnTab("CurrentPaneDomain")},
+    {key = "n", mods = "CTRL", action = action.SpawnTab("CurrentPaneDomain")},
+    {key = "W", mods = "CTRL", action = action.CloseCurrentTab({confirm = true})},
+    {key = "w", mods = "CTRL", action = action.CloseCurrentTab({confirm = true})},
+    {key = "V", mods = "CTRL", action = action.SendKey({key = "V", mods = "CTRL"})},
+    {key = "v", mods = "CTRL", action = action.SendKey({key = "v", mods = "CTRL"})},
+    {key = "Tab", mods = "SHIFT|CTRL", action = action.ActivateTabRelative(-1)},
+    {key = "_", mods = "SHIFT|CTRL", action = action.DecreaseFontSize},
+    {key = "-", mods = "SHIFT|CTRL", action = action.DecreaseFontSize},
+    {key = "+", mods = "SHIFT|CTRL", action = action.IncreaseFontSize},
+    {key = "=", mods = "SHIFT|CTRL", action = action.IncreaseFontSize},
+    {key = "C", mods = "SHIFT|CTRL", action = action.CopyTo("Clipboard")},
+    {key = "c", mods = "SHIFT|CTRL", action = action.CopyTo("Clipboard")},
+    {key = "N", mods = "SHIFT|CTRL", action = action.SpawnWindow},
+    {key = "n", mods = "SHIFT|CTRL", action = action.SpawnWindow},
+    {key = "W", mods = "SHIFT|CTRL", action = action.CloseCurrentTab({confirm = true})},
+    {key = "w", mods = "SHIFT|CTRL", action = action.CloseCurrentTab({confirm = true})},
+    {key = "V", mods = "SHIFT|CTRL", action = action.PasteFrom("Clipboard")},
+    {key = "v", mods = "SHIFT|CTRL", action = action.PasteFrom("Clipboard")}
+}
+```
