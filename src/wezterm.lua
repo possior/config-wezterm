@@ -30,9 +30,11 @@ configuration.keys = {
     {key = "=", mods = "CTRL", action = action.IncreaseFontSize},
     {key = "-", mods = "CTRL", action = action.DecreaseFontSize},
     {key = "n", mods = "CTRL", action = action.SpawnTab("CurrentPaneDomain")},
+    {key = "w", mods = "CTRL", action = action.CloseCurrentTab({confirm = true})},
     {key = "+", mods = "SHIFT|CTRL", action = action.IncreaseFontSize},
     {key = "_", mods = "SHIFT|CTRL", action = action.DecreaseFontSize},
-    {key = "N", mods = "SHIFT|CTRL", action = action.SpawnWindow}
+    {key = "N", mods = "SHIFT|CTRL", action = action.SpawnWindow},
+    {key = "W", mods = "SHIFT|CTRL", action = action.CloseCurrentTab({confirm = true})}
 }
 
 return configuration
