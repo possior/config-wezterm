@@ -25,12 +25,10 @@ configuration.kde_window_background_blur = true
 configuration.use_ime = true
 configuration.window_background_opacity = 0.8
 
-configuration.disable_default_key_bindings = false
+configuration.disable_default_key_bindings = true
 configuration.keys = {
-    {key = "+", mods = "CTRL", action = action.IncreaseFontSize},
-    {key = "-", mods = "CTRL", action = action.DecreaseFontSize},
-    {key = "+", mods = "SHIFT|CTRL", action = action.IncreaseFontSize},
-    {key = "-", mods = "SHIFT|CTRL", action = action.DecreaseFontSize}
+    {key = "=", mods = "CTRL", action = action.IncreaseFontSize},
+    {key = "-", mods = "CTRL", action = action.DecreaseFontSize}
 }
 
 return configuration
