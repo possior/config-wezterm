@@ -43,6 +43,8 @@ configuration.keys = {
     {key = "-", mods = "SHIFT|CTRL", action = action.DecreaseFontSize},
     {key = "+", mods = "SHIFT|CTRL", action = action.IncreaseFontSize},
     {key = "=", mods = "SHIFT|CTRL", action = action.IncreaseFontSize},
+    {key = "C", mods = "SHIFT|CTRL", action = action.CopyTo("Clipboard")},
+    {key = "c", mods = "SHIFT|CTRL", action = action.CopyTo("Clipboard")},
     {key = "N", mods = "SHIFT|CTRL", action = action.SpawnWindow},
     {key = "n", mods = "SHIFT|CTRL", action = action.SpawnWindow},
     {key = "W", mods = "SHIFT|CTRL", action = action.CloseCurrentTab({confirm = true})},
