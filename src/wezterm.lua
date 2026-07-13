@@ -38,6 +38,8 @@ configuration.keys = {
     {key = "n", mods = "CTRL", action = action.SpawnTab("CurrentPaneDomain")},
     {key = "W", mods = "CTRL", action = action.CloseCurrentTab({confirm = true})},
     {key = "w", mods = "CTRL", action = action.CloseCurrentTab({confirm = true})},
+    {key = "V", mods = "CTRL", action = action.SendKey({key = "V", mods = "CTRL"})},
+    {key = "v", mods = "CTRL", action = action.SendKey({key = "v", mods = "CTRL"})},
     {key = "Tab", mods = "SHIFT|CTRL", action = action.ActivateTabRelative(-1)},
     {key = "_", mods = "SHIFT|CTRL", action = action.DecreaseFontSize},
     {key = "-", mods = "SHIFT|CTRL", action = action.DecreaseFontSize},
@@ -48,7 +50,9 @@ configuration.keys = {
     {key = "N", mods = "SHIFT|CTRL", action = action.SpawnWindow},
     {key = "n", mods = "SHIFT|CTRL", action = action.SpawnWindow},
     {key = "W", mods = "SHIFT|CTRL", action = action.CloseCurrentTab({confirm = true})},
-    {key = "w", mods = "SHIFT|CTRL", action = action.CloseCurrentTab({confirm = true})}
+    {key = "w", mods = "SHIFT|CTRL", action = action.CloseCurrentTab({confirm = true})},
+    {key = "V", mods = "SHIFT|CTRL", action = action.PasteFrom("Clipboard")},
+    {key = "v", mods = "SHIFT|CTRL", action = action.PasteFrom("Clipboard")}
 }
 
 return configuration
