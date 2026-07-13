@@ -1,4 +1,5 @@
 local wezterm = require("wezterm")
+local action = wezterm.action
 local configuration = wezterm.config_builder()
 local ansi_dark = {"#000000", "#006300", "#006F00", "#007B00", "#008700", "#009300", "#009F00", "#00AB00"}
 local brights_dark = {"#000000", "#00B700", "#00C300", "#00CF00", "#00DB00", "#00E700", "#00F300", "#00FF00"}
