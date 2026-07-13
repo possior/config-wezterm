@@ -149,7 +149,35 @@ wezterm show-keys --lua > wezterm.lua.bak
 - [WezTerm｜Key Tables](https://wezterm.org/config/key-tables.html)（外部リンク）
 
 ``` lua
-configuration.disable_default_key_bindings = false
+configuration.disable_default_key_bindings = true
+configuration.keys = {
+    {key = "Tab", mods = "CTRL", action = action.ActivateTabRelative(1)},
+    {key = "_", mods = "CTRL", action = action.DecreaseFontSize},
+    {key = "-", mods = "CTRL", action = action.DecreaseFontSize},
+    {key = "+", mods = "CTRL", action = action.IncreaseFontSize},
+    {key = "=", mods = "CTRL", action = action.IncreaseFontSize},
+    {key = "C", mods = "CTRL", action = action.SendKey({key = "C", mods = "CTRL"})},
+    {key = "c", mods = "CTRL", action = action.SendKey({key = "c", mods = "CTRL"})},
+    {key = "N", mods = "CTRL", action = action.SpawnTab("CurrentPaneDomain")},
+    {key = "n", mods = "CTRL", action = action.SpawnTab("CurrentPaneDomain")},
+    {key = "W", mods = "CTRL", action = action.CloseCurrentTab({confirm = true})},
+    {key = "w", mods = "CTRL", action = action.CloseCurrentTab({confirm = true})},
+    {key = "V", mods = "CTRL", action = action.SendKey({key = "V", mods = "CTRL"})},
+    {key = "v", mods = "CTRL", action = action.SendKey({key = "v", mods = "CTRL"})},
+    {key = "Tab", mods = "SHIFT|CTRL", action = action.ActivateTabRelative(-1)},
+    {key = "_", mods = "SHIFT|CTRL", action = action.DecreaseFontSize},
+    {key = "-", mods = "SHIFT|CTRL", action = action.DecreaseFontSize},
+    {key = "+", mods = "SHIFT|CTRL", action = action.IncreaseFontSize},
+    {key = "=", mods = "SHIFT|CTRL", action = action.IncreaseFontSize},
+    {key = "C", mods = "SHIFT|CTRL", action = action.CopyTo("Clipboard")},
+    {key = "c", mods = "SHIFT|CTRL", action = action.CopyTo("Clipboard")},
+    {key = "N", mods = "SHIFT|CTRL", action = action.SpawnWindow},
+    {key = "n", mods = "SHIFT|CTRL", action = action.SpawnWindow},
+    {key = "W", mods = "SHIFT|CTRL", action = action.CloseCurrentTab({confirm = true})},
+    {key = "w", mods = "SHIFT|CTRL", action = action.CloseCurrentTab({confirm = true})},
+    {key = "V", mods = "SHIFT|CTRL", action = action.PasteFrom("Clipboard")},
+    {key = "v", mods = "SHIFT|CTRL", action = action.PasteFrom("Clipboard")}
+}
 ```
 
 デフォルトのキーを採用する。キーを全て決定し終えたら無効化する。
@@ -311,7 +339,35 @@ wezterm show-keys --lua > wezterm.lua.bak
 - [WezTerm | Key Tables](https://wezterm.org/config/key-tables.html) (external link)
 
 ``` lua
-configuration.disable_default_key_bindings = false
+configuration.disable_default_key_bindings = true
+configuration.keys = {
+    {key = "Tab", mods = "CTRL", action = action.ActivateTabRelative(1)},
+    {key = "_", mods = "CTRL", action = action.DecreaseFontSize},
+    {key = "-", mods = "CTRL", action = action.DecreaseFontSize},
+    {key = "+", mods = "CTRL", action = action.IncreaseFontSize},
+    {key = "=", mods = "CTRL", action = action.IncreaseFontSize},
+    {key = "C", mods = "CTRL", action = action.SendKey({key = "C", mods = "CTRL"})},
+    {key = "c", mods = "CTRL", action = action.SendKey({key = "c", mods = "CTRL"})},
+    {key = "N", mods = "CTRL", action = action.SpawnTab("CurrentPaneDomain")},
+    {key = "n", mods = "CTRL", action = action.SpawnTab("CurrentPaneDomain")},
+    {key = "W", mods = "CTRL", action = action.CloseCurrentTab({confirm = true})},
+    {key = "w", mods = "CTRL", action = action.CloseCurrentTab({confirm = true})},
+    {key = "V", mods = "CTRL", action = action.SendKey({key = "V", mods = "CTRL"})},
+    {key = "v", mods = "CTRL", action = action.SendKey({key = "v", mods = "CTRL"})},
+    {key = "Tab", mods = "SHIFT|CTRL", action = action.ActivateTabRelative(-1)},
+    {key = "_", mods = "SHIFT|CTRL", action = action.DecreaseFontSize},
+    {key = "-", mods = "SHIFT|CTRL", action = action.DecreaseFontSize},
+    {key = "+", mods = "SHIFT|CTRL", action = action.IncreaseFontSize},
+    {key = "=", mods = "SHIFT|CTRL", action = action.IncreaseFontSize},
+    {key = "C", mods = "SHIFT|CTRL", action = action.CopyTo("Clipboard")},
+    {key = "c", mods = "SHIFT|CTRL", action = action.CopyTo("Clipboard")},
+    {key = "N", mods = "SHIFT|CTRL", action = action.SpawnWindow},
+    {key = "n", mods = "SHIFT|CTRL", action = action.SpawnWindow},
+    {key = "W", mods = "SHIFT|CTRL", action = action.CloseCurrentTab({confirm = true})},
+    {key = "w", mods = "SHIFT|CTRL", action = action.CloseCurrentTab({confirm = true})},
+    {key = "V", mods = "SHIFT|CTRL", action = action.PasteFrom("Clipboard")},
+    {key = "v", mods = "SHIFT|CTRL", action = action.PasteFrom("Clipboard")}
+}
 ```
 
 Adopt default keys. Disable this once setting all the keys.
