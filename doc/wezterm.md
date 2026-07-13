@@ -191,6 +191,7 @@ configuration.disable_default_key_bindings = false
 キーとその挙動を設定する。
 
 - [WezTerm｜Configuring Key Assignments](https://wezterm.org/config/keys.html)（外部リンク）
+- [WezTerm｜Key Tables](https://wezterm.org/config/key-tables.html)（外部リンク）
 
 ```lua
 configuration.keys = {
@@ -414,6 +415,7 @@ configuration.disable_default_key_bindings = false
 Configure keys and their behavior.
 
 - [WezTerm | Configuring Key Assignments](https://wezterm.org/config/keys.html) (external link)
+- [WezTerm | Key Tables](https://wezterm.org/config/key-tables.html) (external link)
 
 ```lua
 configuration.keys = {
