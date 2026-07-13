@@ -36,4 +36,3 @@ configuration.keys = {
 }
 
 return configuration
-
