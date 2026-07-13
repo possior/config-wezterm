@@ -46,10 +46,10 @@ return configuration
 - [WezTerm｜Lua Reference｜`Config` struct](https://wezterm.org/config/lua/config/)（外部リンク）
 
 ``` lua
-local ansi_dark = {"#000000", "#002200", "#003300", "#004400", "#005500", "#006600", "#007700", "#008800"}
-local brights_dark = {"#007700", "#009900", "#00AA00", "#00BB00", "#00CC00", "#00DD00", "#00EE00", "#00FF00"}
-local ansi_light = {"#00FF00", "#00DD00", "#00CC00", "#00BB00", "#00AA00", "#009900", "#008800", "#007700"}
-local brights_light = {"#008800", "#006600", "#005500", "#004400", "#003300", "#002200", "#001100", "#000000"}
+local ansi_dark = {"#000000", "#006300", "#006F00", "#007B00", "#008700", "#009300", "#009F00", "#00AB00"}
+local brights_dark = {"#000000", "#00B700", "#00C300", "#00CF00", "#00DB00", "#00E700", "#00F300", "#00FF00"}
+local ansi_light = {"#FFFFFF", "#009C00", "#009000", "#008400", "#007800", "#006C00", "#006000", "#005400"}
+local brights_light = {"#FFFFFF", "#004800", "#003C00", "#003000", "#002400", "#001800", "#000C00", "#000000"}
 local ansi = ansi_dark
 local brights = brights_dark
 configuration.automatically_reload_config = true
@@ -83,10 +83,10 @@ configuration.automatically_reload_config = true
 - [WezTerm｜Colors & Appearance](https://wezterm.org/config/appearance.html)（外部リンク）
 
 ```lua
-local ansi_dark = {"#000000", "#002200", "#003300", "#004400", "#005500", "#006600", "#007700", "#008800"}
-local brights_dark = {"#007700", "#009900", "#00AA00", "#00BB00", "#00CC00", "#00DD00", "#00EE00", "#00FF00"}
-local ansi_light = {"#00FF00", "#00DD00", "#00CC00", "#00BB00", "#00AA00", "#009900", "#008800", "#007700"}
-local brights_light = {"#008800", "#006600", "#005500", "#004400", "#003300", "#002200", "#001100", "#000000"}
+local ansi_dark = {"#000000", "#006300", "#006F00", "#007B00", "#008700", "#009300", "#009F00", "#00AB00"}
+local brights_dark = {"#000000", "#00B700", "#00C300", "#00CF00", "#00DB00", "#00E700", "#00F300", "#00FF00"}
+local ansi_light = {"#FFFFFF", "#009C00", "#009000", "#008400", "#007800", "#006C00", "#006000", "#005400"}
+local brights_light = {"#FFFFFF", "#004800", "#003C00", "#003000", "#002400", "#001800", "#000C00", "#000000"}
 local ansi = ansi_dark
 local brights = brights_dark
 configuration.colors = {}
@@ -206,10 +206,10 @@ return configuration
 - [WezTerm｜Lua Reference｜`Config` struct](https://wezterm.org/config/lua/config/) (external link)
 
 ``` lua
-local ansi_dark = {"#000000", "#002200", "#003300", "#004400", "#005500", "#006600", "#007700", "#008800"}
-local brights_dark = {"#007700", "#009900", "#00AA00", "#00BB00", "#00CC00", "#00DD00", "#00EE00", "#00FF00"}
-local ansi_light = {"#00FF00", "#00DD00", "#00CC00", "#00BB00", "#00AA00", "#009900", "#008800", "#007700"}
-local brights_light = {"#008800", "#006600", "#005500", "#004400", "#003300", "#002200", "#001100", "#000000"}
+local ansi_dark = {"#000000", "#006300", "#006F00", "#007B00", "#008700", "#009300", "#009F00", "#00AB00"}
+local brights_dark = {"#000000", "#00B700", "#00C300", "#00CF00", "#00DB00", "#00E700", "#00F300", "#00FF00"}
+local ansi_light = {"#FFFFFF", "#009C00", "#009000", "#008400", "#007800", "#006C00", "#006000", "#005400"}
+local brights_light = {"#FFFFFF", "#004800", "#003C00", "#003000", "#002400", "#001800", "#000C00", "#000000"}
 local ansi = ansi_dark
 local brights = brights_dark
 configuration.automatically_reload_config = true
@@ -243,10 +243,10 @@ Specify the color pallete.
 - [WezTerm | Colors & Appearance](https://wezterm.org/config/appearance.html) (external link)
 
 ```lua
-local ansi_dark = {"#000000", "#002200", "#003300", "#004400", "#005500", "#006600", "#007700", "#008800"}
-local brights_dark = {"#007700", "#009900", "#00AA00", "#00BB00", "#00CC00", "#00DD00", "#00EE00", "#00FF00"}
-local ansi_light = {"#00FF00", "#00DD00", "#00CC00", "#00BB00", "#00AA00", "#009900", "#008800", "#007700"}
-local brights_light = {"#008800", "#006600", "#005500", "#004400", "#003300", "#002200", "#001100", "#000000"}
+local ansi_dark = {"#000000", "#006300", "#006F00", "#007B00", "#008700", "#009300", "#009F00", "#00AB00"}
+local brights_dark = {"#000000", "#00B700", "#00C300", "#00CF00", "#00DB00", "#00E700", "#00F300", "#00FF00"}
+local ansi_light = {"#FFFFFF", "#009C00", "#009000", "#008400", "#007800", "#006C00", "#006000", "#005400"}
+local brights_light = {"#FFFFFF", "#004800", "#003C00", "#003000", "#002400", "#001800", "#000C00", "#000000"}
 local ansi = ansi_dark
 local brights = brights_dark
 configuration.colors = {}
