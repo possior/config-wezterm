@@ -14,6 +14,7 @@ Archlinux系統のディストリビューションとKDE Wayland環境を想定
 
 ``` lua
 local wezterm = require("wezterm")
+local action = wezterm.action
 local configuration = wezterm.config_builder()
 -- 設定 --
 return configuration
@@ -238,6 +239,7 @@ I assume a distribution based on Archlinux and environment of KDE Wayland. If yo
 
 ``` lua
 local wezterm = require("wezterm")
+local action = wezterm.action
 local configuration = wezterm.config_builder()
 -- configuration --
 return configuration
