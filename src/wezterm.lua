@@ -32,6 +32,8 @@ configuration.keys = {
     {key = "-", mods = "CTRL", action = action.DecreaseFontSize},
     {key = "+", mods = "CTRL", action = action.IncreaseFontSize},
     {key = "=", mods = "CTRL", action = action.IncreaseFontSize},
+    {key = "C", mods = "CTRL", action = action.SendKey({key = "C", mods = "CTRL"})},
+    {key = "c", mods = "CTRL", action = action.SendKey({key = "c", mods = "CTRL"})},
     {key = "N", mods = "CTRL", action = action.SpawnTab("CurrentPaneDomain")},
     {key = "n", mods = "CTRL", action = action.SpawnTab("CurrentPaneDomain")},
     {key = "W", mods = "CTRL", action = action.CloseCurrentTab({confirm = true})},
