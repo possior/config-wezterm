@@ -180,7 +180,7 @@ configuration.keys = {
 }
 ```
 
-デフォルトのキーを採用する。キーを全て決定し終えたら無効化する。
+デフォルトのキーを無効化する。
 
 - [WezTerm｜Default Key Assignments](https://wezterm.org/config/default-keys.html)（外部リンク）
 
@@ -370,7 +370,7 @@ configuration.keys = {
 }
 ```
 
-Adopt default keys. Disable this once setting all the keys.
+Disable default keys.
 
 - [WezTerm | Default Key Assignments](https://wezterm.org/config/default-keys.html) (external link)
 
