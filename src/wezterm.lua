@@ -27,10 +27,12 @@ configuration.window_background_opacity = 0.8
 
 configuration.disable_default_key_bindings = true
 configuration.keys = {
+    {key = "Tab", mods = "CTRL", action = action.ActivateTabRelative(1)},
     {key = "=", mods = "CTRL", action = action.IncreaseFontSize},
     {key = "-", mods = "CTRL", action = action.DecreaseFontSize},
     {key = "n", mods = "CTRL", action = action.SpawnTab("CurrentPaneDomain")},
     {key = "w", mods = "CTRL", action = action.CloseCurrentTab({confirm = true})},
+    {key = "Tab", mods = "SHIFT|CTRL", action = action.ActivateTabRelative(-1)},
     {key = "+", mods = "SHIFT|CTRL", action = action.IncreaseFontSize},
     {key = "_", mods = "SHIFT|CTRL", action = action.DecreaseFontSize},
     {key = "N", mods = "SHIFT|CTRL", action = action.SpawnWindow},
