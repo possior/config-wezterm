@@ -67,7 +67,7 @@ configuration.colors.selection_fg = brights[1]
 configuration.font = wezterm.font_with_fallback("Liberation Mono", "IPAexGothic", "Symbols Nerd Font Mono")
 configuration.wayland_window_background_blur = true
 configuration.use_ime = true
-configuration.window_background_opacity = 0.8
+configuration.window_background_opacity = 0.7
 ```
 
 自動で設定の変更を検出してその設定を適用する。
@@ -133,7 +133,7 @@ configuration.use_ime = true
 - [WezTerm｜Colors & Appearance｜Window Background Opacity](https://wezterm.org/config/appearance.html#window-background-opacity)（外部リンク）
 
 ```lua
-configuration.window_background_opacity = 0.8
+configuration.window_background_opacity = 0.7
 ```
 
 ## キーの設定
@@ -292,7 +292,7 @@ configuration.colors.selection_fg = brights[1]
 configuration.font = wezterm.font_with_fallback("Liberation Mono", "IPAexGothic", "Symbols Nerd Font Mono")
 configuration.wayland_window_background_blur = true
 configuration.use_ime = true
-configuration.window_background_opacity = 0.8
+configuration.window_background_opacity = 0.7
 ```
 
 Automatically detect change in configuration and apply it.
@@ -358,7 +358,7 @@ Make the background transparent.
 - [WezTerm | Colors & Appearance | Window Background Opacity](https://wezterm.org/config/appearance.html#window-background-opacity) (external link)
 
 ```lua
-configuration.window_background_opacity = 0.8
+configuration.window_background_opacity = 0.7
 ```
 
 ## Key Configuration
