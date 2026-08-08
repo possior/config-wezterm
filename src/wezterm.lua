@@ -23,7 +23,7 @@ configuration.colors.selection_fg = brights[1]
 configuration.font = wezterm.font_with_fallback({"Liberation Mono", "IPAexGothic", "Symbols Nerd Font Mono"})
 configuration.wayland_window_background_blur = true
 configuration.use_ime = true
-configuration.window_background_opacity = 0.8
+configuration.window_background_opacity = 0.7
 
 configuration.disable_default_key_bindings = true
 configuration.keys = {
