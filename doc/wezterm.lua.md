@@ -65,7 +65,7 @@ configuration.colors.foreground = ansi[8]
 configuration.colors.selection_bg = brights[2]
 configuration.colors.selection_fg = brights[1]
 configuration.font = wezterm.font_with_fallback("Liberation Mono", "IPAexGothic", "Symbols Nerd Font Mono")
-configuration.kde_window_background_blur = true
+configuration.wayland_window_background_blur = true
 configuration.use_ime = true
 configuration.window_background_opacity = 0.8
 ```
@@ -114,10 +114,10 @@ configuration.font = wezterm.font_with_fallback("Liberation Mono", "IPAexGothic"
 
 背景に暈しを入れる。KDE Waylandのプロトコールを使用する。
 
-- [WezTerm｜Lua Reference｜`Config` struct｜`kde_window_background_blur`](https://wezterm.org/config/lua/config/kde_window_background_blur.html)（外部リンク）
+- [WezTerm｜Lua Reference｜`Config` struct｜`wayland_window_background_blur`](https://wezterm.org/config/lua/config/wayland_window_background_blur.html)（外部リンク）
 
 ``` lua
-configuration.kde_window_background_blur = true
+configuration.wayland_window_background_blur = true
 ```
 
 IMEによる入力を有効化する。これを有効化しなければ日本語を入力できない。
@@ -290,7 +290,7 @@ configuration.colors.foreground = ansi[8]
 configuration.colors.selection_bg = brights[2]
 configuration.colors.selection_fg = brights[1]
 configuration.font = wezterm.font_with_fallback("Liberation Mono", "IPAexGothic", "Symbols Nerd Font Mono")
-configuration.kde_window_background_blur = true
+configuration.wayland_window_background_blur = true
 configuration.use_ime = true
 configuration.window_background_opacity = 0.8
 ```
@@ -339,10 +339,10 @@ configuration.font = wezterm.font_with_fallback("Liberation Mono", "IPAexGothic"
 
 Blur the background. This utilizes the KDE Wayland's protocol.
 
-- [WezTerm | Lua Reference | `Config` struct | `kde_window_background_blur`](https://wezterm.org/config/lua/config/kde_window_background_blur.html) (external link)
+- [WezTerm | Lua Reference | `Config` struct | `wayland_window_background_blur`](https://wezterm.org/config/lua/config/wayland_window_background_blur.html) (external link)
 
 ``` lua
-configuration.kde_window_background_blur = true
+configuration.wayland_window_background_blur = true
 ```
 
 Enable inputs by IME. You cannot input Japanese if this disabled.
