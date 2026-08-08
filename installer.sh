@@ -54,10 +54,13 @@ case "${behavior:-overwrite}" in
   "overwrite")
     overwriter "https://raw.githubusercontent.com/possior/config-wezterm/default/src/wezterm.lua"
     echo ":: downloaded configuration files (overwrite)"
+    overwriter "https://raw.githubusercontent.com/possior/config-wezterm/default/doc/wezterm.lua.md"
+    echo ":: downloaded documentation files (overwrite)"
     ;;
   "preserve")
     preserver "https://raw.githubusercontent.com/possior/config-wezterm/default/src/wezterm.lua"
     echo ":: downloaded configuration files (preserve)"
+    preserver "https://raw.githubusercontent.com/possior/config-wezterm/default/doc/wezterm.lua.md"
     ;;
   *)
     echo "!! failed downloadation due to unknown internal variable value"
