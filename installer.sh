@@ -1,12 +1,12 @@
 function overwriter() {
-  curl -so ${HOME}/.config/wezterm/${1##*/} ${1}
+  curl -fsSLo "$HOME/.config/wezterm/${1##*/}" "$1"
 }
 
 function preserver() {
   if
-    [[ ! -f ${HOME}/.config/wezterm/${1##*/} ]]
+    [[ ! -f "$HOME/.config/wezterm/${1##*/}" ]]
   then
-    curl -so ${HOME}/.config/wezterm/${1##*/} ${1}
+    curl -fsSLo "$HOME/.config/wezterm/${1##*/}" "$1"
   fi
 }
 
