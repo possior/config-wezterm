@@ -10,15 +10,15 @@ function preserver() {
   fi
 }
 
-echo ".. initiated the process"
+echo ":: initiated the process"
 
 while
-  [[ $# -gt 0 ]]
+  [[ "$#" -gt "0" ]]
 do
   case "$1" in
     "-o" | "--overwrite")
       if
-	[[ -z "${behavior}" ]]
+	[[ -z "$behavior" ]]
       then
 	behavior="overwrite"
 	shift 1
@@ -29,7 +29,7 @@ do
       ;;
     "-p" | "--preserve")
       if
-	[[ -z "${behavior}" ]]
+	[[ -z "$behavior" ]]
       then
 	behavior="preserve"
         shift 1
@@ -41,24 +41,23 @@ do
   esac
 done
 
-echo ".. parsed arguments"
+echo ":: parsed arguments"
 
 if
-  [[ ! -d ${HOME}/.config/wezterm ]]
+  [[ ! -d "$HOME/.config/wezterm" ]]
 then
-  mkdir -p ${HOME}/.config/wezterm
-
-  echo ".. created the configuration directory"
+  mkdir -p "$HOME/.config/wezterm"
+  echo ":: created the configuration directory"
 fi
 
 case "${behavior:-overwrite}" in
   "overwrite")
-    overwriter https://raw.githubusercontent.com/possior/config-wezterm/default/src/wezterm.lua
-    echo ".. downloaded configuration files (overwrite)"
+    overwriter "https://raw.githubusercontent.com/possior/config-wezterm/default/src/wezterm.lua"
+    echo ":: downloaded configuration files (overwrite)"
     ;;
   "preserve")
-    preserver https://raw.githubusercontent.com/possior/config-wezterm/default/src/wezterm.lua
-    echo ".. downloaded configuration files (preserve)"
+    preserver "https://raw.githubusercontent.com/possior/config-wezterm/default/src/wezterm.lua"
+    echo ":: downloaded configuration files (preserve)"
     ;;
   *)
     echo "!! failed downloadation due to unknown internal variable value"
