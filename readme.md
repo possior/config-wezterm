@@ -18,7 +18,7 @@
 - `-p`, `--preserve`：設定ファイルが既に存在する場合は上書きしない。
 
 ``` bash
-bash <(curl -s https://raw.githubusercontent.com/possior/config-wezterm/default/install.sh)
+curl -fsSL https://raw.githubusercontent.com/possior/config-wezterm/default/installer.sh | bash -s -- 
 ```
 
 # WezTerm Configuration
@@ -39,5 +39,5 @@ To apply the latest configuration, execute the following command. You can modify
 - `-p`, `--preserve`: don't overwrite if configuration files already exist
 
 ``` bash
-bash <(curl -s https://raw.githubusercontent.com/possior/config-wezterm/default/install.sh)
+curl -fsSL https://raw.githubusercontent.com/possior/config-wezterm/default/installer.sh | bash -s -- 
 ```
