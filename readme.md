@@ -12,7 +12,7 @@
 
 ## WezTermの設定を適用
 
-最新版の設定を適用するためには以下の命令文を実行すること。ただし、設定ファイルはArchlinux系統のディストリビューションのデフォルトのパス（`${HOME}/.config/wezterm`）にダウンロードする。また、以下のフラッグやオプションを命令文に続けて付すことで、挙動を調整することができる。
+最新版の設定を適用するためには以下の命令文を実行すること。以下のフラッグやオプションをその命令文に続けて付すことで、挙動を調整することができる。
 
 - `-o`, `--overwrite`：設定ファイルが既に存在する場合は上書きする。
 - `-p`, `--preserve`：設定ファイルが既に存在する場合は上書きしない。
@@ -33,7 +33,7 @@ bash <(curl -s https://raw.githubusercontent.com/possior/config-wezterm/default/
 
 ## Applying WezTerm Configuration
 
-To apply the latest configuration, execute the following command. Note that this will download configuration files at the default path (`${HOME}/.config/wezterm`) on Archlinux-based distributions. You can modify the behavior by adding the following flags and options after the command.
+To apply the latest configuration, execute the following command. You can modify the behavior by adding the following flags and options after the command.
 
 - `-o`, `--overwrite`: overwrite if configuration files already exist
 - `-p`, `--preserve`: don't overwrite if configuration files already exist
