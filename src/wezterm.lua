@@ -21,7 +21,7 @@ configuration.colors.foreground = ansi[8]
 configuration.colors.selection_bg = brights[2]
 configuration.colors.selection_fg = brights[1]
 configuration.font = wezterm.font_with_fallback({"Liberation Mono", "IPAexGothic", "Symbols Nerd Font Mono"})
-configuration.kde_window_background_blur = true
+configuration.wayland_window_background_blur = true
 configuration.use_ime = true
 configuration.window_background_opacity = 0.8
 
