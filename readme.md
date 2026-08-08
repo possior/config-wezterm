@@ -8,7 +8,7 @@
 - [バージョン情報](./version.md)
 - [WezTermの設定を適用](#weztermの設定を適用)
 - 技術文書
-  - [`wezterm.lua`](./doc/wezterm.md)
+  - [`wezterm.lua`](./doc/wezterm.lua.md)
 
 ## WezTermの設定を適用
 
@@ -29,7 +29,7 @@ bash <(curl -s https://raw.githubusercontent.com/possior/config-wezterm/default/
 - [Version Information](./version.md)
 - [Applying WezTerm Configuration](#applying-wezterm-configuration)
 - Technical Documents
-  - [`wezterm.lua`](./doc/wezterm.md)
+  - [`wezterm.lua`](./doc/wezterm.lua.md)
 
 ## Applying WezTerm Configuration
 
